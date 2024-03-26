@@ -2,12 +2,10 @@ package com.example.TaskTracker.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.example.TaskTracker.pojo.Users.User;
+import com.example.TaskTracker.pojo.Users;
 
-public interface UserRepository extends MongoRepository<User, String>{
+public interface UserRepository extends MongoRepository<Users, String>{
 	
-	User findByUsername(String username);
-	
-	
+	Users findByUsername(String username);
 
 }
