@@ -71,6 +71,9 @@
     </style>
 </head>
 <body>
+	
+	
+	
     <div class="container">
         <h2>Edit Task</h2>
         <form th:action="@{'/tasks/edit/' + ${task.id}}" method="post" th:object="${task}">

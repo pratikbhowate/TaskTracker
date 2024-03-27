@@ -1,6 +1,7 @@
 package com.example.TaskTracker.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -24,8 +25,9 @@ public class AuthController {
         return "register"; 
     }
 
+    
     @PostMapping("/register")
-    public String processRegistration(Users users) {
+    public String processRegistration(@NonNull Users users) {
         userRepository.save(users);
         return "redirect:/login";
     }

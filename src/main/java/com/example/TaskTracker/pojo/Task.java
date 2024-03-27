@@ -85,14 +85,5 @@ public class Task {
         this.userId = userId;
     }
     // toString() method for debugging purposes
-    @Override
-    public String toString() {
-        return "Task{" +
-                "id='" + id + '\'' +
-                ", title='" + title + '\'' +
-                ", description='" + description + '\'' +
-                ", priority='" + priority + '\'' +
-                ", dueDate=" + dueDate +
-                '}';
-    }
+   
 }
